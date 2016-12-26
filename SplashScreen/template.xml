@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="3"
+    name="SplashScreen Activity"
+    description="Creates a Splash Screen."
+    minApi="4">
+
+    <category value="Kotlin" />
+    <dependency name="android-support-v4" revision="10" />
+
+    <parameter
+        id="className"
+        name="Class Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="SplashScreenActivity"
+        help="The name of the class to create, e.g. 'SplashScreenActivity'" />
+
+    <thumbs>
+        <thumb>template_splash_screen.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

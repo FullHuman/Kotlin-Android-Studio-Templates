@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="3"
+    name="BottomBar Activity"
+    description="Creates a BottomBar Activity."
+    minApi="4">
+
+    <category value="Kotlin" />
+    <dependency name="android-support-v4" revision="10" />
+
+    <parameter
+        id="className"
+        name="Class Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="BottomBarActivity"
+        help="The name of the class to create, e.g. 'BottomBarActivity'" />
+
+    <parameter
+        id="createLayout"
+        name="Create the layout for the bottom bar activity"
+        type="boolean"
+        default="true"
+        help="If true, the layout fo the activity will be created" />
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="unique|nonempty"
+        default="bottom_bar_activity"
+        help="The name of the layout file for the bottom bar activity, e.g. 'bottom_bar_activity'" />
+
+    <thumbs>
+        <thumb>template_bottom_navigation.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
