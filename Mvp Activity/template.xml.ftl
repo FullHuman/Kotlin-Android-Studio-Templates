@@ -2,8 +2,8 @@
 <template
     format="5"
     revision="3"
-    name="MVP feature"
-    description="Creates a new MVP feature"
+    name="MVP activity"
+    description="Creates a new MVP activity"
     minApi="4">
 
     <category value="UI Component" />
@@ -12,11 +12,11 @@
 
     <parameter
         id="featureName"
-        name="Feature Name"
+        name="Activity Name"
         type="string"
         constraints="class|unique|nonempty"
         default="Task"
-        help="The name of the MVP feature to create, e.g. 'Task'." />
+        help="The name of the MVP activity to create, e.g. 'Task'." />
 
     <globals file="globals.xml.ftl" />
     <execute file="recipe.xml.ftl" />

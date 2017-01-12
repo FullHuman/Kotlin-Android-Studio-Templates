@@ -8,6 +8,11 @@ class ${className} : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val actionBar = supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+        }
+        actionBar?.setTitle(R.string.app_name)
 
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -20,9 +25,8 @@ class ${className} : AppCompatActivity() {
                 R.id.action_menu_settings -> {
                     // User click on settings
                 }
-                else -> true
             }
-            return true
+            true
         }
     }
 
