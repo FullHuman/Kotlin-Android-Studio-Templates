@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="3"
+    name="Firebase Cloud Messaging"
+    description="Creates the basic file for Firebase Cloud Messaging"
+    minApi="4">
+
+    <category value="Kotlin" />
+    <dependency name="android-support-v4" revision="10" />
+
+    <thumbs>
+        <thumb>template_bottom_navigation.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
