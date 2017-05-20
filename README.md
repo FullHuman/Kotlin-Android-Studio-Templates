@@ -31,5 +31,5 @@ A new android project is created with the `NewAndroidModule` template.
 
 ### Activities
 
-SplashScreen
-Bottom Bar Navigation
+- SplashScreen
+- Bottom Bar Navigation
