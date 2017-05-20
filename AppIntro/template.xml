@@ -18,6 +18,14 @@
         help="The name of the class to create, e.g. 'IntroActivity'" />
 
     <parameter
+        id="MainActivityName"
+        name="mainActivity Name"
+        type="string"
+        constraints="unique|nonempty"
+        default="MainActivity"
+        help="The name of your main activity, e.g. 'MainActivity'" />
+
+    <parameter
         id="layoutType"
         name="Layout Type"
         type="enum"
