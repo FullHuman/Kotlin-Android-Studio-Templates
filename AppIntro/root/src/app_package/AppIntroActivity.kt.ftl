@@ -27,10 +27,10 @@ class ${className} : AppIntro2() {
         <#if useDefaultSlide>
         for (i in 0..titles.size - 1) {
             <#if layoutType == "type1">
-            addSlide(AppIntroFragment.newInstance(titles[i], descriptions[i], drawables[i], colors[i]))
+            addSlide(AppIntroFragment.newInstance(titles[i], descriptions[i], drawables[0], colors[0]))
             </#if>
             <#if layoutType == "type2">
-            addSlide(AppIntro2Fragment.newInstance(titles[i], descriptions[i], drawables[i], colors[i]))
+            addSlide(AppIntro2Fragment.newInstance(titles[i], descriptions[i], drawables[0], colors[0]))
             </#if>
         }
         <#else>
