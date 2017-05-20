@@ -5,7 +5,7 @@
     <instantiate from="root/src/app_package/AppIntroActivity.kt.ftl"
         to="${escapeXmlAttribute(srcOut)}/${className}.kt" />
 
-    <merge from="root/src/app_package/MainActivity.kt.ftl"
+    <instantiate from="root/src/app_package/MainActivity.kt.ftl"
         to="${escapeXmlAttribute(srcOut)}/${mainActivityName}.kt" />
 
     <merge from="root/AndroidManifest.xml.ftl"

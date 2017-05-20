@@ -18,12 +18,12 @@
         help="The name of the class to create, e.g. 'IntroActivity'" />
 
     <parameter
-        id="MainActivityName"
-        name="mainActivity Name"
+        id="mainActivityName"
+        name="MainActivity Name"
         type="string"
         constraints="unique|nonempty"
         default="MainActivity"
-        help="The name of your main activity, e.g. 'MainActivity'" />
+        help="The name of your new main activity, e.g. 'MainActivity'" />
 
     <parameter
         id="layoutType"

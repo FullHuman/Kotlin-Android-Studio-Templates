@@ -1,6 +1,8 @@
 package ${packageName}
 
 import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.graphics.Color
 <#if layoutType == "type1">
 import com.github.paolorotolo.appintro.${activityClassSuper1}
 import com.github.paolorotolo.appintro.${appIntroFragment1}
@@ -10,6 +12,7 @@ import com.github.paolorotolo.appintro.${activityClassSuper2}
 import com.github.paolorotolo.appintro.${appIntroFragment2}
 </#if>
 
+// compile 'com.github.paolorotolo:appintro:4.1.0'
 <#if layoutType == "type1">
 class ${className} : AppIntro() {
 </#if>
